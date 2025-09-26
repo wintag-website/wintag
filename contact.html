@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <link rel="icon" type="image/png" sizes="48x48" href="images/favicon-48.png">
+  <link rel="icon" type="image/x-icon" href="images/favicon-w.ico">
+  <!-- Bigger sizes for better clarity -->
+<link rel="icon" type="image/png" sizes="64x64" href="images/favicon-64.png">
+<link rel="icon" type="image/png" sizes="128x128" href="images/favicon-128.png">
+<link rel="icon" type="image/png" sizes="256x256" href="images/favicon-256.png">
+  <title>WINTAG</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+    <div class="container">
+
+      <!-- Logo + Brand + Slogan -->
+      <a class="navbar-brand d-flex flex-column align-items-start fw-bold" href="index.html">
+        <div class="d-flex align-items-center">
+          <img src="images/logo.png" alt="Logo" width="70" height="50" class="me-2 d-inline-block align-text-top">
+        <div class="brand-text">
+              <span><strong>WINTAG<sup>®</sup></strong></span>
+          <p class="slogan">Lines</p>
+        </div>
+        </div>
+        <small class="text-muted slogan">"Your Perfect Pair Awaits"</small>
+      </a>
+
+      <!-- Mobile Toggle Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="privacy.html">Policies</a></l>
+         </ul>
+
+        <!-- Dark/Light Mode Toggle -->
+        <div class="form-check form-switch ms-lg-3">
+          <input class="form-check-input" type="checkbox" id="themeToggle">
+          <label class="form-check-label" for="themeToggle">
+            <i id="themeIcon" class="bi bi-sun-fill"></i>
+          </label>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5 pt-5">
+    <div class="row">
+      
+      <!-- Left: Contact Form -->
+      <div class="col-md-6">
+        <h2 class="mb-4">Drop a Message.</h2>
+        <h5 class="mb-4">We would love to hear from you.</h5>
+        <form action="https://formspree.io/f/mwpngzrk" method="POST">
+  <div class="mb-3">
+    <label for="name" class="form-label">Your Name (required)</label>
+    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="email" class="form-label">Your Email (optional)</label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+  </div>
+
+  <div class="mb-3">
+    <label for="phone" class="form-label">Your Phone (required)</label>
+    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="message" class="form-label">Your Message (required)</label>
+    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Write your message..." required></textarea>
+  </div>
+
+  <div class="text-center">
+    <button type="submit" class="cssbuttons-io">
+      <span>Send Message</span>
+    </button>
+  </div>
+</form>
+
+</div>
+</form>
+
+
+      <!-- Right: Contact Info -->
+      <div class="col-md-6">
+        <h2 class="mb-4">TALK to US</h2>
+        <p><strong>Whatsapp:</strong> <a href="https://wa.me/923014621383" target="_blank">+92 3014621383</a></p>
+        <p><strong>Phone:</strong> <a href="tel:0348-4569377">0348-4569377</a></p>
+        <h3 class="mb-4">CHAT with US</h3>
+        <p><strong>Email:</strong> <a href="mailto:wintag.lines@gmail.com">wintag.lines@gmail.com</a></p>
+        <p><strong>Address:</strong> WINTAG Office, Hanif Garden Rd, Wara Sittar, Lahore,Pakistan</p>
+
+        <hr>
+
+        <h4>Note:-</h4>
+        <h6>About: Shopping/Carton</h6>
+        <p>
+          We have not included the shopping option on this website because we do not sell single pairs; we only deal in cartons of 12 pairs. 
+          However, we will be updating the shopping feature soon. Until then, we kindly request your cooperation. 
+        </p>
+
+        <h6>About: Own Production</h6>
+        <p>
+          All the shoes, sandals, and outlets you see on this website are our own production. 
+          Therefore, we assure you that we provide only high-quality products.</p>
+          <p>
+          "Thank you for visiting our website, and if you like our products, please contact us or fill out the form, and our team will get in touch with you."
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- FOOTER -->
+  <footer class="py-3 text-center">
+    <div class="container">
+      <small>&copy; <span id="year"></span> WINTAG — All rights reserved</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>

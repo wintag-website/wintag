@@ -1,0 +1,268 @@
+/* ======================
+   Global Styles
+====================== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Navbar Styling */
+.navbar {
+  padding-top: 0.8rem;
+  padding-bottom: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(90deg, #2e6aa6, #585c61, #2e6aa6);
+  transition: background 0.1s ease;
+}
+
+/* Navbar hover effect with gradient */
+.navbar:hover {
+  background: linear-gradient(90deg, #585c61, #2e6aa6, #585c61);
+}
+sup {
+  font-size: 0.8em;
+  top: -0.9em;
+}
+
+/* Navbar links style */
+.navbar-nav .nav-link {
+  color: #fff; /* normal color */
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover {
+  color:  #0dcaf0; /* text color on hover */
+}
+
+/* Underline animation */
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* thoda niche underline ke liye */
+  width: 0;
+  height: 2px;
+  background-color: black; /* underline color */
+  transition: width 0.3s ease;
+}
+
+/* Show underline only on hover */
+.navbar-nav .nav-link:hover::after {
+  width: 100%; /* underline text ke barabar chalega */
+}
+
+/* Dropdown item hover */
+.dropdown-menu .dropdown-item:hover {
+  background-color: tan;
+  color: beige;
+}
+
+/* Dropdown show on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* thoda smooth lagega */
+}
+
+/* ======================
+   Dark Theme
+====================== */
+body.dark-theme {
+  background: #121212;
+  color: #e4e4e4;
+}
+body.dark-theme .navbar {
+  background: #1f1f1f;
+}
+body.dark-theme .nav-link {
+  color: #e4e4e4;
+}
+body.dark-theme .sidebar {
+  background: #1e1e1e;
+}
+body.dark-theme footer {
+  background: #1f1f1f;
+  color: #bbb;
+}
+body.dark-theme a {
+  color: #0dcaf0;
+}
+
+/* ======================
+   Logo Responsive
+====================== */
+.navbar-brand img {
+  height: 45px;
+  width: 50px;
+  border-radius: 20%;
+  object-fit: cover;
+}
+
+.brand-text {
+  text-align: right;
+}
+
+.brand-text strong {
+  font-size: 24px;
+  display: block;
+  margin: 0;
+  line-height: 1;
+}
+
+.brand-text .slogan {
+  font-size: 15px;
+  margin: 0;
+  line-height: 1;
+}
+
+/* ======================
+   Hero Section
+====================== */
+.hero {
+  padding: 60px 0;
+  text-align: center;
+}
+
+/* Carousel */
+#heroCarousel {
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+#heroCarousel .carousel-inner img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* ======================
+   Services Section
+====================== */
+#services .card {
+  border: none;
+  color: #0d4dad;
+  background-color: ghostwhite;
+  transition: transform 0.3s;
+}
+#services .card:hover {
+  color: #cf0505;
+  transform: translateY(-5px);
+}
+
+/* ======================
+   Catalogue Section
+====================== */
+#catalogue .card {
+  border: none;
+  transition: transform 0.3s;
+}
+#catalogue .card:hover {
+  transform: translateY(-5px);
+}
+#catalogue .card-img-top {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* ======================
+   Contact Section
+====================== */
+#contact form .form-control {
+  border-radius: 8px;
+}
+
+/* ========== Button From Uiverse.io ========== */
+.cssbuttons-io {
+  position: relative;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  border-radius: 0.8em;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to right, #585c61, orange);
+  color: ghostwhite;
+  overflow: hidden;
+}
+
+.cssbuttons-io svg {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.5em;
+}
+
+.cssbuttons-io span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8em 1.2em 0.8em 1.05em;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cssbuttons-io::before,
+.cssbuttons-io::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.cssbuttons-io::before {
+  content: "";
+  background: teal;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.cssbuttons-io:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.cssbuttons-io:active {
+  transform: scale(0.95);
+}
+
+.cta-btn:hover {
+  background-color: #c0392b;
+}
+
+/* ======================
+   Footer
+====================== */
+footer {
+  background: #000000;
+  color: #cf0505;
+  font-size: 14px;
+  padding: 20px 0;
+}
+
+/* ======================
+   Responsive Adjustments
+====================== */
+@media (max-width: 768px) {
+  #heroCarousel .carousel-inner img {
+    height: 250px;
+  }
+  #catalogue .card-img-top {
+    height: 200px;
+  }
+  .navbar-brand img {
+    width: 35px;
+    height: 35px;
+  }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <link rel="icon" type="image/png" sizes="48x48" href="images/favicon-48.png">
+  <link rel="icon" type="image/x-icon" href="images/favicon-w.ico">
+  <!-- Bigger sizes for better clarity -->
+<link rel="icon" type="image/png" sizes="64x64" href="images/favicon-64.png">
+<link rel="icon" type="image/png" sizes="128x128" href="images/favicon-128.png">
+<link rel="icon" type="image/png" sizes="256x256" href="images/favicon-256.png">
+  <title>WINTAG</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+    <div class="container">
+
+      <!-- Logo + Brand + Slogan -->
+      <a class="navbar-brand d-flex flex-column align-items-start fw-bold" href="index.html">
+        <div class="d-flex align-items-center">
+          <img src="images/logo.png" alt="Logo" width="70" height="50" class="me-2 d-inline-block align-text-top">
+        <div class="brand-text">
+              <span><strong>WINTAG<sup>®</sup></strong></span>
+          <p class="slogan">Lines</p>
+        </div>
+        </div>
+        <small class="text-muted slogan">"Your Perfect Pair Awaits"</small>
+      </a>
+
+      <!-- Mobile Toggle Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link active" href="privacy.html">Policies</a></li>
+        </ul>
+     
+      <!-- Dark/Light Mode Toggle -->
+        <div class="form-check form-switch ms-lg-3">
+          <input class="form-check-input" type="checkbox" id="themeToggle">
+          <label class="form-check-label" for="themeToggle">
+            <i id="themeIcon" class="bi bi-sun-fill"></i>
+          </label>
+        </div>
+        
+      </div>
+    </div>
+  </nav>
+
+  <!-- Privacy Policy Content -->
+    <header id="home" class="hero text-center my-5 pt-5">
+    <div class="container">
+  <section class="py-5">
+    <div class="container">
+      <h1 class="text-center mb-4">Privacy Policy</h1>
+      <p class="text-center">
+        We respect your privacy. Any personal information you provide (such as your name, email,
+        or phone number) will only be used to contact you regarding your inquiries.
+        We do not share your data with third parties.
+      </p>
+
+      <h2 class="mt-5">Terms & Conditions</h2>
+      <p class="text-center">
+        By using this website, you agree to our terms and conditions. All product images and
+        descriptions are for reference only. Actual products may vary. We reserve the right
+        to update or change these terms anytime.
+      </p>
+    </div>
+  </section>
+  </div>
+</header>
+
+  <!-- FOOTER -->
+  <footer class="py-3 text-center">
+    <div class="container">
+      <small>&copy; <span id="year"></span> WINTAG — All rights reserved</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
