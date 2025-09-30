@@ -65,8 +65,6 @@ sup {
   margin-top: 0; /* thoda smooth lagega */
 }
 
-
-
 /* ======================
    Dark Theme
 ====================== */
@@ -244,6 +242,21 @@ body.dark-theme a {
 }
 
 /* ======================
+   Trading Section
+====================== */
+#b2b .card {
+  border: none;
+  color: #0d4dad;               /* default text & icon color */
+  background-color: ghostwhite; /* same as services */
+  transition: transform 0.3s, color 0.3s;
+}
+
+#b2b .card:hover {
+  color: #cf0505;               /* red shade on hover */
+  transform: translateY(-5px);  /* thoda lift */
+}
+
+/* ======================
    Footer
 ====================== */
 footer {
@@ -268,4 +281,5 @@ footer {
     height: 35px;
   }
 }
+
 
