@@ -19,6 +19,10 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
+
+   <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -46,13 +50,13 @@
       <!-- Navbar Links -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          <li class="nav-item"><a class="nav-link" href="privacy.html">Policies</a></l>
+          <li class="nav-item" data-aos="fade-right" data-aos-delay="0"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item" data-aos="fade-right" data-aos-delay="200"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item" data-aos="fade-right" data-aos-delay="300"><a class="nav-link" href="privacy.html">Policies</a></l>
          </ul>
 
         <!-- Dark/Light Mode Toggle -->
-        <div class="form-check form-switch ms-lg-3">
+        <div class="form-check form-switch ms-lg-3" data-aos="fade-right" data-aos-delay="400">
           <input class="form-check-input" type="checkbox" id="themeToggle">
           <label class="form-check-label" for="themeToggle">
             <i id="themeIcon" class="bi bi-sun-fill"></i>
@@ -66,7 +70,7 @@
     <div class="row">
       
       <!-- Left: Contact Form -->
-      <div class="col-md-6">
+      <div class="col-md-6" data-aos="fade-right">
         <h2 class="mb-4">Drop a Message.</h2>
         <h5 class="mb-4">We would love to hear from you.</h5>
         <form action="https://formspree.io/f/mwpngzrk" method="POST">
@@ -102,7 +106,7 @@
 
 
       <!-- Right: Contact Info -->
-      <div class="col-md-6">
+      <div class="col-md-6" data-aos="fade-left">
         <h2 class="mb-4">TALK to US</h2>
         <p><strong>Whatsapp:</strong> <a href="https://wa.me/923014621383" target="_blank">+92 3014621383</a></p>
         <p><strong>Phone:</strong> <a href="tel:0348-4569377">0348-4569377</a></p>
@@ -139,6 +143,15 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 
   <!-- Custom JS -->
   <script src="script.js"></script>
