@@ -36,11 +36,16 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
+
+ <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
+
 <body>
   
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+ <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
     <div class="container">
 
       <!-- Logo + Brand + Slogan -->
@@ -63,38 +68,38 @@
       <!-- Navbar Links -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item" data-aos="fade-right" data-aos-delay="0"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item" data-aos="fade-right" data-aos-delay="100"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item" data-aos="fade-right" data-aos-delay="300"><a class="nav-link" href="#services">Services</a></li>
           
         <!-- 🔽 Sidebar jesa dropdown -->
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown"  data-aos="fade-right" data-aos-delay="400">
           <a class="nav-link dropdown-toggle" href="#" id="collectionsDropdown" role="button" data-bs-toggle="dropdown">
             Collections
           </a>
           <ul class="dropdown-menu" aria-labelledby="collectionsDropdown">
-            <li><a class="dropdown-item" href="#mens">Men's Footwear</a></li>
-            <li><a class="dropdown-item" href="#womens">Women's Footwear</a></li>
+            <li data-aos="fade-up" data-aos-delay="1000"><a class="dropdown-item" href="#mens">Men's Footwear</a></li>
+            <li data-aos="fade-up" data-aos-delay="1500"><a class="dropdown-item" href="#womens">Women's Footwear</a></li>
           </ul>
         </li>
 
-  <!-- TRADING DROPDOWN -->
-<li class="nav-item dropdown">
+
+        <!-- TRADING DROPDOWN -->
+<li class="nav-item dropdown"  data-aos="fade-right" data-aos-delay="500">
   <a class="nav-link dropdown-toggle" href="#" id="tradingDropdown" role="button" data-bs-toggle="dropdown">
     Trading
   </a>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#b2b">B2B (Traders)</a></li>
-    <li><a class="dropdown-item disabled text-muted" href="#">B2C (Coming Soon)</a></li>
+    <li  data-aos="fade-up" data-aos-delay="1000"><a class="dropdown-item" href="#b2b">B2B (Traders)</a></li>
+    <li  data-aos="fade-up" data-aos-delay="1500"><a class="dropdown-item disabled text-muted" href="#">B2C (Coming Soon)</a></li>
   </ul>
 </li>
 
+     <li class="nav-item"  data-aos="fade-right" data-aos-delay="600"><a class="nav-link" href="contact.html">Contact</a></li>
+     <li class="nav-item"  data-aos="fade-right" data-aos-delay="700"><a class="nav-link" href="privacy.html">Policies</a></li>
 
-           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          <li class="nav-item"><a class="nav-link" href="privacy.html">Policies</a></li>
-          
           <!-- Dark/Light Mode Toggle -->
-        <div class="form-check form-switch ms-lg-3">
+        <div class="form-check form-switch ms-lg-3"  data-aos="fade-right" data-aos-delay="800">
           <input class="form-check-input" type="checkbox" id="themeToggle">
           <label class="form-check-label" for="themeToggle">
             <i id="themeIcon" class="bi bi-sun-fill"></i>
@@ -107,9 +112,9 @@
 
 
   <!-- HERO with Carousel -->
-  <header id="home" class="hero text-center mt-5 pt-5">
+ <header id="home" class="hero text-center mt-5 pt-5">
     <div class="container">
-         <h6 class="display-5 text-muted mb-4">Step Into Quality, Step Into WINTAG.</h6>
+      <h6 class="display-5 text-muted mb-4">Step Into Quality, Step Into WINTAG.</h6>
 
       <!-- Image Slider (Carousel) -->
       <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -148,7 +153,7 @@
     </div>
   </header>
 
-    <section id="about" class="py-5 reveal">
+    <section id="about" class="py-5 reveal" data-aos="fade-up" data-aos-delay="100">
   <div class="container">
     <div class="row align-items-center">
       <!-- Left side image -->
@@ -170,25 +175,25 @@
 </section>
 
   <!-- OUR SERVICES -->
-  <section id="services" class="py-5 text-center bg-dark text-white reveal">
+  <section id="services" class="py-5 text-center bg-dark text-white reveal"  data-aos="fade-up">
     <div class="container">
       <h2 class="text-center mb-4">Our Services</h2>
       <div class="row">
-        <div class="col-md-4 mb-3">
+        <div class="col-md-4 mb-3"  data-aos="fade-up" data-aos-delay="0">
           <div class="card h-20 shadow-sm text-center p-3">
             <i class="bi bi-truck fs-1"></i>
             <h5 class="mt-3">Fast Delivery</h5>
             <p class="text-muted">We Deliver All Over In Pakistan</p>
           </div>
         </div>
-        <div class="col-md-4 mb-3">
+        <div class="col-md-4 mb-3"  data-aos="fade-up" data-aos-delay="200">
           <div class="card h-30 shadow-sm text-center p-3">
             <i class="bi bi-bag-check fs-1"></i>
             <h5 class="mt-3">100% Quality Products</h5>
             <p class="text-muted">Leather and Rexin</p><p class="text-muted">MEN's (Shoes,Sandals,Slipper)</p><p class="text-muted">WOMEN's (Shoes)</p>
           </div>
         </div>
-        <div class="col-md-4 mb-3">
+        <div class="col-md-4 mb-3"  data-aos="fade-up" data-aos-delay="400">
           <div class="card h-20 shadow-sm text-center p-3">
             <i class="bi bi-headset fs-1"></i>
             <h5 class="mt-3">Support</h5>
@@ -203,13 +208,13 @@
   </section>
 
   <!-- CATALOGUE -->
-  <section id="catalogue" class="py-5">
+  <section id="catalogue" class="py-5" data-aos="fade-up">
     <div class="container">
       <h2 class="text-center mb-4">Catalogue</h2>
       <div class="row g-4">
 
         <!-- Product 1 -->
-        <div class="col-md-4">
+        <div class="col-md-4"  data-aos="zoom-in">
           <div class="card h-100 shadow-sm">
             <img src="images/catalogue/product1.png" class="card-img-top" alt="Product 1">
             <div class="card-body">
@@ -222,7 +227,7 @@
         </div>
 
         <!-- Product 2 -->
-        <div class="col-md-4">
+        <div class="col-md-4"  data-aos="zoom-in" data-aos-delay="100">
           <div class="card h-100 shadow-sm">
             <img src="images/catalogue/product2.jpg" class="card-img-top" alt="Product 2">
             <div class="card-body">
@@ -235,7 +240,7 @@
         </div>
 
         <!-- Product 3 -->
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
           <div class="card h-100 shadow-sm">
             <img src="images/catalogue/product3.png" class="card-img-top" alt="Product 3">
             <div class="card-body">
@@ -249,7 +254,7 @@
 
 
         <!-- Product 4-->
-        <div class="col-md-4">
+        <div class="col-md-4"  data-aos="zoom-in" data-aos-delay="300">
           <div class="card h-100 shadow-sm">
             <img src="images/catalogue/product4.png" class="card-img-top" alt="Product 3">
             <div class="card-body">
@@ -262,7 +267,7 @@
         </div>
 
         <!-- Product 5 -->
-        <div class="col-md-4">
+        <div class="col-md-4"  data-aos="zoom-in" data-aos-delay="400">
           <div class="card h-100 shadow-sm">
             <img src="images/catalogue/product5.jpg" class="card-img-top" alt="Product 3">
             <div class="card-body">
@@ -275,7 +280,7 @@
         </div>
 
         <!-- Product 6 -->
-        <div class="col-md-4">
+        <div class="col-md-4"  data-aos="zoom-in" data-aos-delay="500">
           <div class="card h-100 shadow-sm">
             <img src="images/catalogue/product6.jpg" class="card-img-top" alt="Product 3">
             <div class="card-body">
@@ -291,13 +296,13 @@
   </section>
 
   <!-- Men's Collection -->
-<section id="mens" class="py-5">
+<section id="mens" class="py-5" data-aos="fade-right">
   <div class="container">
     <h2 class="text-center mb-4">Men's Collection</h2>
     <div class="row g-4">
 
       <!-- Product Card 1 -->
-      <div class="col-md-4">
+      <div class="col-md-4" data-aos="flip-right">
         <div class="card h-100 shadow-sm">
           <img src="images/mens/shoe1.jpg" class="card-img-top" alt="Men Shoe 1">
           <div class="card-body text-center">
@@ -309,7 +314,7 @@
       </div>
 
       <!-- Product Card 2 -->
-      <div class="col-md-4">
+      <div class="col-md-4" data-aos="flip-right" data-aos-delay="100">
         <div class="card h-100 shadow-sm">
           <img src="images/mens/shoe2.jpg" class="card-img-top" alt="Men Shoe 2">
           <div class="card-body text-center">
@@ -321,7 +326,7 @@
       </div>
 
       <!-- Product Card 3 -->
-      <div class="col-md-4">
+      <div class="col-md-4" data-aos="flip-right" data-aos-delay="200">
         <div class="card h-100 shadow-sm">
           <img src="images/mens/shoe3.jpg" class="card-img-top" alt="Men Shoe 3">
           <div class="card-body text-center">
@@ -337,13 +342,13 @@
 </section>
 
 <!-- Women's Collection -->
-<section id="womens" class="py-5 bg-light">
+<section id="womens" class="py-5 bg-light" data-aos="fade-left">
   <div class="container">
     <h2 class="text-center mb-4">Women's Collection</h2>
     <div class="row g-4">
 
       <!-- Product Card 1 -->
-      <div class="col-md-4">
+      <div class="col-md-4" data-aos="flip-left">
         <div class="card h-100 shadow-sm">
           <img src="images/womens/shoe1.jpg" class="card-img-top" alt="Women Shoe 1">
           <div class="card-body text-center">
@@ -355,7 +360,7 @@
       </div>
 
       <!-- Product Card 2 -->
-      <div class="col-md-4">
+      <div class="col-md-4" data-aos="flip-left" data-aos-delay="100">
         <div class="card h-100 shadow-sm">
           <img src="images/womens/shoe2.jpg" class="card-img-top" alt="Women Shoe 2">
           <div class="card-body text-center">
@@ -367,7 +372,7 @@
       </div>
 
       <!-- Product Card 3 -->
-      <div class="col-md-4">
+      <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
         <div class="card h-100 shadow-sm">
           <img src="images/womens/shoe3.jpg" class="card-img-top" alt="Women Shoe 3">
           <div class="card-body text-center">
@@ -382,9 +387,8 @@
   </div>
 </section>
 
-
 <!-- TRADING SECTION -->
-<section id="b2b" class="py-5 text-center bg-dark text-white reveal">
+<section id="b2b" class="py-5 text-center bg-dark text-white reveal" data-aos="zoom-in-up">
   <div class="container">
     <h2 class="text-center mb-4">Trading</h2>
    <p class="text-center mb-5" style="color: rgba(255,255,255,0.75);">
@@ -425,6 +429,7 @@
   </div>
 </section>
 
+ 
   <!-- FOOTER -->
   <footer class="py-3 text-center">
     <div class="container">
@@ -435,15 +440,18 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
   <!-- Custom JS -->
   <script src="script.js"></script>
 
 
 </body>
 </html>
-
-
-
-
-
-
