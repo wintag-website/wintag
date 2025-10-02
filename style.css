@@ -301,39 +301,14 @@ footer {
   }
 }
 
-/* ======================
-   Navbar Toggler Fix
-====================== */
+/* Navbar Toggler Button */
 .navbar-toggler {
-  border: none; /* border hata do */
-  outline: none;
-  z-index: 1100; /* upar rakhna */
+  background-color: rgba(0,0,0,0.6);  /* halka black background */
+  border: none;
+  z-index: 2000; /* hamesha top pr rahe */
 }
 
+/* Navbar Toggler Icon (white banane ke liye) */
 .navbar-toggler-icon {
-  background-image: none; /* Bootstrap ka default hatao */
-  width: 25px;
-  height: 3px;
-  background-color: white; /* hamburger lines white */
-  display: block;
-  position: relative;
-}
-
-.navbar-toggler-icon::before,
-.navbar-toggler-icon::after {
-  content: "";
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  display: block;
-  position: absolute;
-  left: 0;
-}
-
-.navbar-toggler-icon::before {
-  top: -8px;
-}
-
-.navbar-toggler-icon::after {
-  top: 8px;
+  filter: invert(1);  /* icon ko white kar dega */
 }
