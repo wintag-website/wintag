@@ -5,6 +5,11 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.navbar-toggler {
+  z-index: 1100; /* Navbar se bhi upar */
+  position: relative;
+}
+
 /* Navbar Styling */
 .navbar {
   padding-top: 0.8rem;
@@ -283,6 +288,7 @@ footer {
     height: 35px;
   }
 }
+
 
 
 
