@@ -5,9 +5,8 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.navbar-toggler {
-  z-index: 1100; /* Navbar se bhi upar */
-  position: relative;
+.navbar {
+  z-index: 1050; /* Bootstrap ke modal ke neeche but sab elements ke upar */
 }
 
 /* Navbar Styling */
@@ -25,6 +24,10 @@ body {
 sup {
   font-size: 0.8em;
   top: -0.9em;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 /* Navbar links style */
@@ -67,6 +70,8 @@ sup {
   display: block;
   margin-top: 0; /* thoda smooth lagega */
 }
+
+
 
 /* ======================
    Dark Theme
@@ -244,6 +249,7 @@ body.dark-theme a {
   background-color: #c0392b;
 }
 
+
 /* ======================
    Trading Section
 ====================== */
@@ -298,15 +304,36 @@ footer {
 /* ======================
    Navbar Toggler Fix
 ====================== */
-/* Force navbar toggler icon to always show */
 .navbar-toggler {
-  border: none !important;
-  outline: none !important;
-  z-index: 2000 !important; /* upar hi rahe */
+  border: none; /* border hata do */
+  outline: none;
+  z-index: 1100; /* upar rakhna */
 }
 
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-image: none; /* Bootstrap ka default hatao */
+  width: 25px;
+  height: 3px;
+  background-color: white; /* hamburger lines white */
+  display: block;
+  position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  display: block;
+  position: absolute;
+  left: 0;
+}
+
+.navbar-toggler-icon::before {
+  top: -8px;
+}
+
+.navbar-toggler-icon::after {
+  top: 8px;
 }
