@@ -3,7 +3,6 @@
 ====================== */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  transition: background 0.3s, color 0.3s;
 }
 
 /* Navbar Styling */
@@ -12,7 +11,6 @@ body {
   padding-bottom: 0.5rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   background: linear-gradient(90deg, #2e6aa6, #585c61, #2e6aa6);
-  transition: background 0.1s ease;
 }
 
 /* Navbar hover effect with gradient */
@@ -22,6 +20,10 @@ body {
 sup {
   font-size: 0.8em;
   top: -0.9em;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 /* Navbar links style */
@@ -281,5 +283,6 @@ footer {
     height: 35px;
   }
 }
+
 
 
