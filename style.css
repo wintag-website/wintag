@@ -301,9 +301,9 @@ footer {
   }
 }
 
+
 /* Navbar Toggler Button */
 .navbar-toggler {
-  background-color: rgba(0,0,0,0.6);  /* halka black background */
   border: none;
   z-index: 2000; /* hamesha top pr rahe */
 }
@@ -312,3 +312,4 @@ footer {
 .navbar-toggler-icon {
   filter: invert(1);  /* icon ko white kar dega */
 }
+
